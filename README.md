@@ -122,7 +122,7 @@ YMAPaymentRequest *request = [YMAPaymentRequest paymentWithPatternId:patternId a
 
     YMAPaymentResponse *paymentResponse = (YMAPaymentResponse *)processResponse;
     
-    switch (processResponse.status) {
+    switch (paymentResponse.status) {
         case YMAResponseStatusSuccess: {
             // Process payment response
             break;
